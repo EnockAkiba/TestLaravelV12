@@ -1,18 +1,20 @@
 <x-layouts.app :title="__('Dashboard')">
-    <div class="flex h-full w-full flex-1 flex-col gap-4 rounded-xl">
-        <div class="grid auto-rows-min gap-4 md:grid-cols-3">
-            <div class="relative aspect-video overflow-hidden rounded-xl border border-neutral-200 dark:border-neutral-700">
-                <x-placeholder-pattern class="absolute inset-0 size-full stroke-gray-900/20 dark:stroke-neutral-100/20" />
-            </div>
-            <div class="relative aspect-video overflow-hidden rounded-xl border border-neutral-200 dark:border-neutral-700">
-                <x-placeholder-pattern class="absolute inset-0 size-full stroke-gray-900/20 dark:stroke-neutral-100/20" />
-            </div>
-            <div class="relative aspect-video overflow-hidden rounded-xl border border-neutral-200 dark:border-neutral-700">
-                <x-placeholder-pattern class="absolute inset-0 size-full stroke-gray-900/20 dark:stroke-neutral-100/20" />
-            </div>
-        </div>
-        <div class="relative h-full flex-1 overflow-hidden rounded-xl border border-neutral-200 dark:border-neutral-700">
-            <x-placeholder-pattern class="absolute inset-0 size-full stroke-gray-900/20 dark:stroke-neutral-100/20" />
-        </div>
+    <div class="d-flex justify-content-between align-items-center">
+        <h1>
+            <button class="btn bg-dark p-1 d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#menu"
+                aria-controls="menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <button class="btn bg-dark p-1 d-none d-lg-inline-block menu-toggle" type="button">
+                <i class="fas fa-bars"></i>
+            </button>
+            TABLEAU DE BORD
+        </h1>
+        <input type="search" wire:model.live="search" class="w-25 mb-2" placeholder="Recherche ...">
     </div>
+
+    <div class="content-main">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi mollitia dicta tempore, accusamus adipisci, facilis saepe at eveniet atque, tempora unde.
+    </div>
+    
 </x-layouts.app>
